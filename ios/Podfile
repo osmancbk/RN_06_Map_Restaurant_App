@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'myWorksMap' do
+target 'myWorksMapK' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'myWorksMapTests' do
+  target 'myWorksMapKTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'myWorksMap' do
   end
 end
 
-target 'myWorksMap-tvOS' do
-  # Pods for myWorksMap-tvOS
+target 'myWorksMapK-tvOS' do
+  # Pods for myWorksMapK-tvOS
 
-  target 'myWorksMap-tvOSTests' do
+  target 'myWorksMapK-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
